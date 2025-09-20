@@ -174,7 +174,7 @@ const ChatContainer = () => {
                   <p className="italic text-gray-500">You deleted this message</p>
                 ) : (
                   <>
-                    {!isEditing && message.text && <p>{message.text}</p>}
+                    {!isEditing && message.text && <p className='whitespace-pre-wrap break break-words'>{message.text}</p>}
 
                     {isEditing && (
                       <div className="flex flex-col gap-2">
